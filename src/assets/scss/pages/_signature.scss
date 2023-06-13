@@ -1,0 +1,149 @@
+@import "../mixin";
+
+//videoPlayer
+.videoPlayer {
+  width: 100%;
+  .container {
+    .row {
+      .videoHeading {
+        position: relative;
+        width: 100%;
+        video {
+          width: 100%;
+        }
+        .videoTop {
+          position: absolute;
+          top: 75%;
+          .prmrBtn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .primaryBtn {
+              @include primaryBtn();
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .videoPlayer {
+    width: 100%;
+    .container {
+      .row {
+        .videoHeading {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+//vertuSignature
+
+.vertuSignature {
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    .row {
+      width: 100%;
+      .filter {
+        display: flex;
+        padding: 20px 100px;
+        .colorPrice {
+          font-size: 14px;
+        }
+      }
+      .price {
+        display: flex;
+        text-align: center;
+        cursor: pointer;
+        color: rgba(18, 18, 18, 0.75);
+        margin-left: 15px;
+        .color {
+          display: flex;
+          font-size: 12px;
+        }
+        img {
+          width: 15px;
+          height: 15px;
+          object-fit: contain;
+          margin-left: 5px;
+        }
+      }
+      .products {
+        justify-self: flex-end;
+        .productItem {
+          font-size: 14px;
+          color: rgba(18, 18, 18, 0.75);
+          justify-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .vertuSignature {
+    width: 100%;
+
+    .container {
+      .row {
+        width: 100%;
+        .filter {
+          display: flex;
+          padding: 80px 100px;
+          .colorPrice {
+            font-size: 14px;
+          }
+        }
+        .price {
+          display: flex;
+          text-align: center;
+          cursor: pointer;
+          color: rgba(18, 18, 18, 0.75);
+          margin-left: 15px;
+          .color {
+            display: flex;
+            font-size: 12px;
+          }
+          img {
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+            margin-left: 5px;
+          }
+        }
+        .products {
+          justify-self: flex-end;
+          .productItem {
+            font-size: 14px;
+            color: rgba(18, 18, 18, 0.75);
+            justify-self: flex-end;
+          }
+        }
+      }
+    }
+  }
+}
+
+.cardSection {
+  display: flex;
+  padding: 0 80px 60px;
+
+  .container {
+    .row {
+      .cardBox {
+        display: flex;
+
+        column-gap: 45px;
+        row-gap: 100px;
+        flex-wrap: wrap;
+      }
+    }
+  }
+}

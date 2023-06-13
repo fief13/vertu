@@ -1,0 +1,89 @@
+.cart {
+  width: 100%;
+  height: 100%;
+
+  .container {
+    .row {
+      padding: 150px 60px 40px;
+      .sectionTitle {
+        display: flex;
+        margin-bottom: 40px;
+        font-size: 30px;
+      }
+      table {
+        border-collapse: collapse;
+
+        thead {
+          width: 100%;
+         
+          tr {
+            width: 100%;
+           
+            .opening {
+              color: #aaaaaa;
+              font-weight: 100;
+              font-size: 12px;
+              font-family: EngraversGothicBT;
+            }
+          }
+        }
+        tbody {
+          tr {
+            border-top: 1px solid rgb(213, 213, 213);
+            border-bottom: 1px solid rgb(213, 213, 213);
+            td {
+              width: 16%;
+              text-align: center;
+              font-family: EngraversGothicBT;
+              img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+              }
+              .quantityBorder {
+                margin-left: 30%;
+                width: 100px;
+                border: 1px solid black;
+                span {
+                  display: inline-block;
+                  background-color: white;
+                  padding: 10px;
+                }
+                .plus,
+                .minus {
+                  cursor: pointer;
+                  &:hover {
+                    background-color: #00000035;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .checkOut {
+        margin-right: 10%;
+        padding: 20px;
+        display: grid;
+        justify-content: flex-end;
+        
+        .total{
+          margin: 20px 0;
+          span{
+            font-family: EngraversGothicBT;
+            font-size: 20px;
+          }
+          .taxes{
+            margin-top: 10px;
+            font-size: 16px;
+            font-family: EngraversGothicBT;
+          }
+        }
+        .primaryBtn {
+          @include primaryBtnWhite();
+          width: 100%;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+//Global styles
+@import "./base";
+@import "./mixin";
+
+//pages
+@import "./pages/home";
+@import "./pages/signature";
+@import "./pages/single-product";
+@import "./pages/cart";
+@import "./pages/login";
+@import "./pages/register";
+@import "./pages/not-found";
+
+
+//components
+@import "./components/header";
+@import "./components/footer";
+@import "./components/card";
+

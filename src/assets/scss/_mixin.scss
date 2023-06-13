@@ -1,0 +1,41 @@
+@mixin primaryBtn() {
+  width: 150px;
+  height: 45px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+  transition: 0.1s ease;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: #111111;
+    border: none;
+  }
+}
+
+@mixin primaryBtnWhite() {
+  width: 150px;
+  height: 45px;
+  font-weight: 500;
+  letter-spacing: 0.16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  transition: 0.1s ease;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    outline: 1px solid black;
+  }
+}
+
